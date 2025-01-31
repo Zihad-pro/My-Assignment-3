@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -38,6 +38,8 @@
     <!--Customistion  -->
     <style type="text/tailwindcss">
       @theme {
+        --color-primary3: #FFF9F4;
+      --color-primary2: #F9DF8A;
         --color-primary1: #ffdc26;
         --font-adlam: "ADLaM Display", serif;
         --font-sora: "Sora", serif;
@@ -46,7 +48,7 @@
   </head>
 
   <body>
-    <header class="mt-3 w-full h-15 bg-[#FFF9F4]">
+    <header class="mt-3 w-full h-15 bg-primary3">
       <nav class="font-sora flex items-center justify-around">
         <!-- title -->
         <div class="flex items-center gap-2">
@@ -90,15 +92,15 @@
 
     <main class="md:container mx-auto mt-5">
       <!-- Banner -->
-      <section class="my-10">
+      <section class="mt-40 md:mt-20 ">
         <div
-          class="bg-[url(./image/cat-big.png)] h-screen bg-no-repeat w-full bg-contain"
+          class="bg-[url(./image/cat-big.png)] lg:h-200 md:h-130 h-80  bg-no-repeat w-full bg-contain  "
         >
-          <div class="w-6/12">
+          <div class="md:w-6/12  -mt-30 md:-mt-0 lg:pt-25   absolute ">
             <div class="text-2xl md:text-5xl lg:text-7xl font-adlam">
-              <h1>Pamper Your Pet, Because They Deserve the Bes</h1>
+              <h1 class="">Pamper Your Pet, Because They Deserve the Bes</h1>
             </div>
-            <div class="py-7 text-xl lg:text-2xl font-sora text-gray-600">
+            <div class="py-7 text-md lg:text-2xl md:text-xl font-sora text-gray-600">
               <p>
                 Discover a world of treats, toys, and essentials handpicked for
                 your furry friends. Shop now and make tails wag with joy!
@@ -112,7 +114,249 @@
           </div>
         </div>
       </section>
+<!-- Browse By -->
+<section class="mb-20">
+<div class="font-adlam md:text-3xl text-xl lg:pt-20 pb-10"><h1>Browse By <span class=" md:hidden">Categories</span> </h1></div>
+<!-- items container -->
+<div class="grid grid-cols-2 gap-5 md:grid-cols-3 lg:grid-cols-6">
+  <!-- item1 -->
+<div class=" rounded-lg  h-60 text-center space-y-3 bg-primary2">
+<div class="py-5"><img class="px-5 py-3  mx-auto  pt-7 rounded-full bg-slate-100 " src="./Image/dog-cartoon.png" alt=""></div>
+<p class=" font-adlam">Dog</p>
+<p class="font-sora">3 Items</p>
+
+</div>
+
+<!-- item2 -->
+<div class=" rounded-lg  h-60 text-center space-y-3 bg-primary2">
+<div class="py-5"><img class="px-5 py-3  mx-auto  pt-7 rounded-full bg-slate-100 " src="./Image/fish-cartoon.png" alt=""></div>
+<p class=" font-adlam">Dog</p>
+<p class="font-sora">3 Items</p>
+
+</div>
+<!-- item1 -->
+<div class=" rounded-lg  h-60 text-center space-y-3 bg-primary2">
+<div class="py-5"><img class="px-5 py-3  mx-auto  pt-7 rounded-full bg-slate-100 " src="./Image/cat-cartoon.png" alt=""></div>
+<p class=" font-adlam">Cat</p>
+<p class="font-sora">3 Items</p>
+
+</div>
+<!-- item1 -->
+<div class=" rounded-lg  h-60 text-center space-y-3 bg-primary2">
+<div class="py-5"><img class="px-5 py-3  mx-auto  pt-7 rounded-full bg-slate-100 " src="./Image/bird-cartoon.png" alt=""></div>
+<p class=" font-adlam">Bird</p>
+<p class="font-sora">3 Items</p>
+
+</div>
+<!-- item 5 -->
+<div class=" rounded-lg  h-60 text-center space-y-3 bg-primary2">
+<div class="py-5"><img class="px-5 py-3  mx-auto  pt-7 rounded-full bg-slate-100 " src="./Image/mouse-cartoon.png" alt=""></div>
+<p class=" font-adlam">Small Pet</p>
+<p class="font-sora">3 Items</p>
+
+</div>
+<!-- item 6 -->
+<div class=" rounded-lg  h-60 text-center space-y-3 bg-primary2">
+<div class="py-5"><img class="px-5 py-2  mx-auto  pt-7 rounded-full bg-slate-100 " src="./Image/rabbit-cartoon.png" alt=""></div>
+<p class=" font-adlam">Rabbit</p>
+<p class="font-sora">2 Items</p>
+
+</div>
+</div>
+</div>
+
+</section>
+
+
+
     </main>
+
+
+    <!-- Trending Pet Products -->
+<section class="my-20 w-full bg-primary3">
+<div class="md:container mx-auto">
+
+  <p class="font-adlam text-3xl">Trending Pet Products</p>
+<!-- container -->
+<div class="grid grid-cols-2 md:grid-cols-3">
+<!-- img -->
+<div class="bg-primary2 ">
+<div class="pt-5 mt-5">
+<p class="text-2xl font-adlam w-6/12 ">T-Shirt for Dogs</p>
+<p class="font-sora">Discover a world of treats, toys, and essentials handpicked for </p>
+<button>Shop Now</button>
+
+
+
+</div>
+<div>
+  <img class=" mx-auto" src="./Image/cute-pet-mid.png" alt="">
+</div>
+
+
+</div>
+<!-- item 1 -->
+<div class="rounded-sm h-60 outline-1 flex gap-5">
+  <!-- img -->
+<div class=>
+<img src="./Image/dog-cartoon.png" alt="">
+</div>
+<!-- text -->
+<div>
+<p ><i class="fa-solid fa-star"></i>4.5</p>
+<p>Pet Bad</p>
+<p>$39.99</p>
+</div>
+
+
+</div>
+<!-- item 1 -->
+<div class="rounded-sm h-60 outline-1 flex gap-5">
+  <!-- img -->
+<div class=>
+<img src="./Image/dog-cartoon.png" alt="">
+</div>
+<!-- text -->
+<div>
+<p ><i class="fa-solid fa-star"></i>4.5</p>
+<p>Pet Bad</p>
+<p>$39.99</p>
+</div>
+
+
+</div>
+<!-- item 1 -->
+<div class="rounded-sm h-60 outline-1 flex gap-5">
+  <!-- img -->
+<div class=>
+<img src="./Image/dog-cartoon.png" alt="">
+</div>
+<!-- text -->
+<div>
+<p ><i class="fa-solid fa-star"></i>4.5</p>
+<p>Pet Bad</p>
+<p>$39.99</p>
+</div>
+
+
+</div>
+<!-- item 1 -->
+<div class="rounded-sm h-60 outline-1 flex gap-5">
+  <!-- img -->
+<div class=>
+<img src="./Image/dog-cartoon.png" alt="">
+</div>
+<!-- text -->
+<div>
+<p ><i class="fa-solid fa-star"></i>4.5</p>
+<p>Pet Bad</p>
+<p>$39.99</p>
+</div>
+
+
+</div>
+<!-- item 1 -->
+<div class="rounded-sm h-60 outline-1 flex gap-5">
+  <!-- img -->
+<div class=>
+<img src="./Image/dog-cartoon.png" alt="">
+</div>
+<!-- text -->
+<div>
+<p ><i class="fa-solid fa-star"></i>4.5</p>
+<p>Pet Bad</p>
+<p>$39.99</p>
+</div>
+
+
+</div>
+<!-- item 1 -->
+<div class="rounded-sm h-60 outline-1 flex gap-5">
+  <!-- img -->
+<div class=>
+<img src="./Image/dog-cartoon.png" alt="">
+</div>
+<!-- text -->
+<div>
+<p ><i class="fa-solid fa-star"></i>4.5</p>
+<p>Pet Bad</p>
+<p>$39.99</p>
+</div>
+
+
+</div>
+<!-- item 1 -->
+<div class="rounded-sm h-60 outline-1 flex gap-5">
+  <!-- img -->
+<div class=>
+<img src="./Image/dog-cartoon.png" alt="">
+</div>
+<!-- text -->
+<div>
+<p ><i class="fa-solid fa-star"></i>4.5</p>
+<p>Pet Bad</p>
+<p>$39.99</p>
+</div>
+
+
+</div>
+<!-- item 1 -->
+<div class="rounded-sm h-60 outline-1 flex gap-5">
+  <!-- img -->
+<div class=>
+<img src="./Image/dog-cartoon.png" alt="">
+</div>
+<!-- text -->
+<div>
+<p ><i class="fa-solid fa-star"></i>4.5</p>
+<p>Pet Bad</p>
+<p>$39.99</p>
+</div>
+
+
+</div>
+<!-- item 1 -->
+<div class="rounded-sm h-60 outline-1 flex gap-5">
+  <!-- img -->
+<div class=>
+<img src="./Image/dog-cartoon.png" alt="">
+</div>
+<!-- text -->
+<div>
+<p ><i class="fa-solid fa-star"></i>4.5</p>
+<p>Pet Bad</p>
+<p>$39.99</p>
+</div>
+
+
+</div>
+<!-- item 1 -->
+<div class="rounded-sm h-60 outline-1 flex gap-5">
+  <!-- img -->
+<div class=>
+<img src="./Image/dog-cartoon.png" alt="">
+</div>
+<!-- text -->
+<div>
+<p ><i class="fa-solid fa-star"></i>4.5</p>
+<p>Pet Bad</p>
+<p>$39.99</p>
+</div>
+
+
+</div>
+
+
+
+</div>
+</div>
+
+
+
+</section>
+
+
+
 
     <footer></footer>
   </body>
